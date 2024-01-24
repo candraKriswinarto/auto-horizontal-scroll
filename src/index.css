@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  text-align: center;
+  max-width: 1200px;
+  margin: 10rem auto;
+}
+
+/* all images */
+img {
+  max-width: 150px;
+  height: 10rem;
+  object-fit: cover;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.banner-wrapper {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.banner-wrapper .wrapper {
+  display: flex;
+}
+
+.banner-wrapper .wrapper .images {
+  display: flex;
+  /* animation: swipe var(--speed) linear infinite; */
+}
+
+.banner-wrapper:hover .wrapper .images {
+  animation-play-state: paused;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
